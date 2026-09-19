@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sohaib — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display (display) + JetBrains Mono (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Lucide icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Initialising<span class="loader-dots">...</span></span>
+    </div>
+  </div>
+
+  <!-- ░░ SCROLL-TO-TOP ░░ -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">MS<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#academic"  class="nav-link">Academic</a></li>
+        <li><a href="#projects"  class="nav-link">Projects</a></li>
+        <li><a href="#gallery"   class="nav-link">Gallery</a></li>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <i data-lucide="sun" id="iconSun"></i>
+          <i data-lucide="moon" id="iconMoon" style="display:none"></i>
+        </button>
+        <!-- Hamburger -->
+        <button id="hamburger" class="icon-btn hamburger-btn" aria-label="Toggle menu">
+          <i data-lucide="menu" id="menuIcon"></i>
+          <i data-lucide="x"   id="closeIcon" style="display:none"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <div class="hero-mesh"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-tag"><span class="dot"></span> Available for Work</p>
+        <h1 class="hero-name">
+          <span class="typed-wrap">
+            <span id="typedText"></span><span class="cursor">|</span>
+          </span>
+        </h1>
+        <p class="hero-title">Computer Science student &amp; Front-end Developer </p>
+        <p class="hero-reg">Reg No: <strong>25ABCS0106</strong></p>
+        <p class="hero-bio">
+          I'm a CS student who loves web development and is currently stepping into the world of AI. I enjoy building real projects, learning new technologies, and turning ideas into something people can actually use. Still growing — but growing fast.
+        </p>
+        <div class="hero-cta">
+          <a href="assets/cv.pdf" class="btn btn-primary" download>
+            <i data-lucide="download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="mail"></i> Contact Me
+          </a>
+          <button class="btn btn-ghost" id="cvViewerBtn">
+            <i data-lucide="eye"></i> View CV
+          </button>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/sohaib575" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/muhammad-sohaib-b3978242b" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/_sohaib575" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring ring2"></div>
+        <img
+          src="Clean photo.jpeg"
+          alt="Muhammad Sohaib profile"
+          class="hero-img"
+          id="profileImg"
+        />
+        <div class="hero-badge">
+          <i data-lucide="code-2"></i>
+          <span>1+ yrs exp</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label"><span>01</span> About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Computer Science undergraduate</strong> at University of Engineering and Technology Peshawar, Abbottabad Campus. I enjoy building websites and writing clean code in HTML, CSS,JavaScript and Python. I'm also currently exploring Artificial Intelligence and learning how it can be used to solve real-world problems. I like turning ideas into working projects and I'm always looking to grow and improve as a developer.
+          </p>
+          <p>
+            When I'm not coding, I'm usually learning something new, solving problems, or thinking about the next project I want to build.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-tag">HTML</div>
+            <div class="skill-tag">CSS</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">C++</div>
+            <div class="skill-tag">MySQL</div>
+            <!-- <div class="skill-tag">Figma</div>
+            <div class="skill-tag">Three.js</div> -->
+          </div>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Projects<br>Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Years<br>Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Tech Stack<br>Mastered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Certificates<br>Done</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ACADEMIC ░░ -->
+  <section id="academic" class="section section-alt">
+    <div class="container">
+      <div class="section-label"><span>02</span> Academic</div>
+      <h2 class="section-title">Education Background</h2>
+      <div class="table-controls reveal">
+        <div class="search-wrap">
+          <i data-lucide="search"></i>
+          <input type="text" id="tableSearch" placeholder="Search institutes, degrees…" />
+        </div>
+        <div class="sort-btns">
+          <button class="sort-btn active" data-sort="year">Year <i data-lucide="arrow-up-down"></i></button>
+          <button class="sort-btn" data-sort="grade">Grade <i data-lucide="arrow-up-down"></i></button>
+          <button class="sort-btn" data-sort="degree">Degree <i data-lucide="arrow-up-down"></i></button>
+        </div>
+      </div>
+      <div class="table-wrap reveal">
+        <table id="academicTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Degree / Class</th>
+              <th>Institute</th>
+              <th>Year</th>
+              <th>Grade / CGPA</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="academicBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+        <p id="noResults" class="no-results" style="display:none">No matching records found.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS / PROGRESS TRACKER ░░ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label"><span>03</span> Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal" data-index="0">
+          <div class="project-thumb">
+            <img src="assets/academic-tracker.jpg" alt="Academic Tracker dashboard screenshot" loading="lazy" />
+          </div>
+          <div class="project-icon"><i data-lucide="clipboard-list"></i></div>
+          <h3>Academic Tracker</h3>
+          <p>CS Lab Assignment Submission Tracker is a dashboard designed for Computer Science students to organize and track upcoming lab tasks, pending assignments and viva dates in one place.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="progress-block">
+            <div class="progress-header">
+              <span>Progress</span><span class="progress-pct">100%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="100"></div></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sohaib575/Academic-Tracker" class="btn-sm" target="_blank" rel="noopener"><i data-lucide="code"></i> Code</a>
+            <a href="https://studentacademictracker.netlify.app/" class="btn-sm accent-btn" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Live</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-index="1">
+          <div class="project-thumb">
+            <img src="assets/unidev-showcase.jpg" alt="UniDev Showcase home page screenshot" loading="lazy" />
+          </div>
+          <div class="project-icon"><i data-lucide="layout-grid"></i></div>
+          <h3>UniDev Showcase</h3>
+          <p>A dark-themed portfolio hub where CS students showcase semester projects, tools, and full-stack apps.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="progress-block">
+            <div class="progress-header">
+              <span>Progress</span><span class="progress-pct">100%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" data-width="100"></div></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sohaib575/UniDev-Showcase" class="btn-sm" target="_blank" rel="noopener"><i data-lucide="code"></i> Code</a>
+            <a href="https://unidevshowcase.netlify.app/" class="btn-sm accent-btn" target="_blank" rel="noopener"><i data-lucide="external-link"></i> Live</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ GALLERY ░░ -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-label"><span>04</span> Gallery</div>
+      <h2 class="section-title">Visual Work</h2>
+      <div class="gallery-grid reveal" id="galleryGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+   <section id="certifications" class="section">
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-container">
+
+    <div class="cert-card">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-info">
+        <h3>Cybersecurity</h3>
+        <p class="cert-issuer">Asian Development Bank Institute (ADBI)</p>
+        <p class="cert-date">📅 May 2026</p>
+        <p class="cert-id">🔑 ID: 176847-177-930-3401</p>
+        <a href="https://elearning-adbi.org/certificate-verifier/?&code=176847-177-930-3401"
+           target="_blank" class="verify-btn">
+          🔗 Verify Certificate
+        </a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-info">
+        <h3>Programming for Everybody (Getting Started with Python)</h3>
+        <p class="cert-issuer">University of Michigan</p>
+        <p class="cert-date">📅 27 August 2026</p>
+        <p class="cert-id">🔑 ID: WLV74TOCYX58</p>
+        <a href="https://coursera.org/verify/WLV74TOCYX58"
+           target="_blank" class="verify-btn">
+          🔗 Verify Certificate
+        </a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-info">
+        <h3>Introduction to Machine Learning</h3>
+        <p class="cert-issuer">Duke University</p>
+        <p class="cert-date">📅 11 September 2026</p>
+        <p class="cert-id">🔑 ID: 1UE3SFNPZ76O </p>
+        <a href="https://coursera.org/verify/1UE3SFNPZ76O "
+           target="_blank" class="verify-btn">
+          🔗 Verify Certificate
+        </a>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-info">
+        <h3>Research and Development management</h3>
+        <p class="cert-issuer">mitacs</p>
+        <p class="cert-date">📅 12 September 2026</p>
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-info">
+        <h3>Use of modren tools Overleaf and Latex</h3>
+        <p class="cert-issuer">University of Engineering and Technology Peshawar</p>
+        <p class="cert-date">📅 December 2025</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label"><span>05</span> Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Have a project in mind, or just want to say hello? My inbox is always open.
+          </p>
+          <div class="contact-detail">
+            <i data-lucide="mail"></i>
+            <span>m.sohaib5754@gmail.com</span>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="phone"></i>
+            <span>+92 319 0476504</span>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="map-pin"></i>
+            <span>Haripur, Pakistan</span>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="clock"></i>
+            <span>Always Available</span>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="name" placeholder="Muhammad Sohaib" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="m.sohaib5754@gmail.com" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project…"></textarea>
+            <span class="form-error" id="msgError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i data-lucide="send"></i> Send Message
+          </button>
+          <div id="formSuccess" class="form-success" style="display:none">
+            <i data-lucide="check-circle"></i>
+            <span>Message sent! I'll get back to you within 24 hours.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">MS<span class="accent">.</span></span>
+      <p>&copy; 2026 Muhammad Sohaib. Built with ♥ and JavaScript.</p>
+      <div class="social-links">
+        <a href="https://github.com/sohaib575" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/muhammad-sohaib-b3978242b" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/_sohaib575" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ CV VIEWER MODAL ░░ -->
+  <div id="cvModal" class="modal-overlay" style="display:none">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i data-lucide="file-text"></i> Sohaib's CV</h3>
+        <button id="cvModalClose" class="icon-btn" aria-label="Close">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- In a real deployment, replace src with your actual PDF path -->
+        <iframe
+          src="Muhammad_Sohaib_CV.pdf"
+          title="CV PDF Viewer"
+          id="cvIframe"
+        ></iframe>
+        <div class="pdf-fallback">
+          <i data-lucide="file-text"></i>
+          <p>PDF preview requires a browser that supports embedded PDFs.</p>
+          <a href="assets/cv.pdf" download class="btn btn-primary">Download Instead</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div id="lightbox" class="modal-overlay" style="display:none">
+    <div class="lightbox-box">
+      <button id="lightboxClose" class="icon-btn lightbox-close" aria-label="Close"><i data-lucide="x"></i></button>
+      <button id="lightboxPrev" class="lb-nav lb-prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+      <img id="lightboxImg" src="" alt="Gallery image" />
+      <div id="lightboxCaption" class="lb-caption"></div>
+      <button id="lightboxNext" class="lb-nav lb-next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+/* ============================================================
+   PORTFOLIO — style.css
+   Theme: Dark editorial/tech with light mode variant
+   Fonts: Playfair Display (display) + JetBrains Mono (body)
+   ============================================================ */
+
+/* ── CSS Variables ─────────────────────────────────────────── */
+:root {
+  /* Dark theme (default) */
+  --bg-primary:    #080c14;
+  --bg-secondary:  #0d1220;
+  --bg-card:       #111827;
+  --bg-card-hover: #161f30;
+  --border:        rgba(99, 179, 237, 0.12);
+  --border-hover:  rgba(99, 179, 237, 0.35);
+
+  --text-primary:  #e8edf5;
+  --text-secondary:#8b9ab8;
+  --text-muted:    #4b5a75;
+
+  --accent:        #38bdf8;   /* electric cyan */
+  --accent-glow:   rgba(56,189,248,0.25);
+  --accent2:       #f59e0b;   /* warm amber */
+  --accent2-glow:  rgba(245,158,11,0.20);
+
+  --gradient-hero: radial-gradient(ellipse 80% 60% at 60% 40%,
+                    rgba(56,189,248,0.15) 0%,
+                    rgba(245,158,11,0.07) 50%,
+                    transparent 100%);
+
+  --shadow-card:   0 4px 24px rgba(0,0,0,0.45), 0 0 0 1px var(--border);
+  --shadow-glow:   0 0 32px var(--accent-glow);
+
+  --radius-sm:     8px;
+  --radius-md:     14px;
+  --radius-lg:     22px;
+
+  --transition:    0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-display:  'Playfair Display', Georgia, serif;
+  --font-body:     'JetBrains Mono', 'Courier New', monospace;
+}
+
+[data-theme="light"] {
+  --bg-primary:    #f0f4fb;
+  --bg-secondary:  #e4eaf5;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #f8faff;
+  --border:        rgba(56,100,200,0.15);
+  --border-hover:  rgba(56,100,200,0.40);
+
+  --text-primary:  #0d1a2e;
+  --text-secondary:#3a4f72;
+  --text-muted:    #7a8caa;
+
+  --accent:        #0284c7;
+  --accent-glow:   rgba(2,132,199,0.20);
+  --accent2:       #d97706;
+  --accent2-glow:  rgba(217,119,6,0.15);
+
+  --gradient-hero: radial-gradient(ellipse 80% 60% at 60% 40%,
+                    rgba(2,132,199,0.10) 0%,
+                    rgba(217,119,6,0.06) 50%,
+                    transparent 100%);
+
+  --shadow-card:   0 4px 20px rgba(0,40,120,0.10), 0 0 0 1px var(--border);
+  --shadow-glow:   0 0 24px var(--accent-glow);
+}
+
+/* ── Reset & Base ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  transition: background var(--transition), color var(--transition);
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a   { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul { list-style: none; }
+
+::selection { background: var(--accent); color: #000; }
+
+/* ── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 99px; }
+
+/* ── Loading Screen ─────────────────────────────────────────── */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#loader.hidden { opacity: 0; visibility: hidden; }
+
+.loader-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+
+.loader-ring {
+  width: 52px;
+  height: 52px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.loader-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.loader-dots { animation: ellipsis 1.4s infinite; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes ellipsis {
+  0%   { content: '.'; }
+  33%  { content: '..'; }
+  66%  { content: '...'; }
+}
+
+/* ── Scroll-to-top ──────────────────────────────────────────── */
+#scrollTop {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--transition), transform var(--transition);
+  z-index: 500;
+  box-shadow: var(--shadow-glow);
+}
+#scrollTop.visible { opacity: 1; transform: translateY(0); }
+#scrollTop:hover { transform: translateY(-3px); }
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 400;
+  background: rgba(8, 12, 20, 0.72);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition), box-shadow var(--transition);
+}
+[data-theme="light"] #navbar {
+  background: rgba(240, 244, 251, 0.80);
+}
+#navbar.scrolled {
+  box-shadow: 0 4px 32px rgba(0,0,0,0.30);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+.accent { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.nav-actions { display: flex; gap: 8px; align-items: center; }
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: color var(--transition), background var(--transition);
+}
+.icon-btn:hover { color: var(--accent); background: var(--accent-glow); }
+
+.hamburger-btn { display: none; }
+
+/* ── Container & Section Base ───────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+.section-alt { background: var(--bg-secondary); }
+
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label span {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  opacity: 0.4;
+  color: var(--text-primary);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 48px;
+  line-height: 1.15;
+}
+
+/* ── Reveal animation ───────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Hero Section ───────────────────────────────────────────── */
+#hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 24px;
+}
+
+.hero-mesh {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+  pointer-events: none;
+}
+
+.hero-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  justify-content: space-between;
+}
+
+.hero-text { flex: 1; max-width: 600px; }
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 20px;
+  background: var(--accent2-glow);
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 1px solid rgba(245,158,11,0.25);
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--accent2);
+  border-radius: 50%;
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(1.5); }
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  min-height: 1.2em;
+}
+
+.cursor {
+  color: var(--accent);
+  animation: blink 0.8s step-end infinite;
+}
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+
+.hero-title {
+  font-size: 1rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.hero-reg {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.hero-bio {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transition: all var(--transition);
+}
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 32px var(--accent-glow);
+}
+.btn-outline {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.btn-outline:hover {
+  background: var(--accent-glow);
+  transform: translateY(-2px);
+}
+.btn-ghost {
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+.full-width { width: 100%; justify-content: center; }
+
+.btn-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.74rem;
+  font-family: var(--font-body);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.btn-sm:hover { border-color: var(--border-hover); color: var(--text-primary); }
+.btn-sm svg { width: 14px; height: 14px; }
+.accent-btn { border-color: var(--accent); color: var(--accent); }
+.accent-btn:hover { background: var(--accent-glow); }
+
+/* ── Social Icons ───────────────────────────────────────────── */
+.social-links { display: flex; gap: 12px; }
+.social-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.social-icon:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  transform: translateY(-3px);
+}
+
+/* ── Hero Image ─────────────────────────────────────────────── */
+.hero-image-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-ring {
+  position: absolute;
+  inset: -20px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: ringRotate 8s linear infinite;
+}
+.ring2 {
+  inset: -36px;
+  border-style: dashed;
+  opacity: 0.15;
+  animation-direction: reverse;
+  animation-duration: 14s;
+}
+@keyframes ringRotate { to { transform: rotate(360deg); } }
+
+.hero-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 48px var(--accent-glow);
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: var(--accent);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Scroll indicator ───────────────────────────────────────── */
+.scroll-indicator {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollAnim 1.8s ease-in-out infinite;
+}
+@keyframes scrollAnim {
+  0%   { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  100% { opacity: 0; transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ── About Section ──────────────────────────────────────────── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+.about-text strong { color: var(--text-primary); }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.skill-tag {
+  font-size: 0.74rem;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.skill-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  text-align: center;
+  transition: all var(--transition);
+}
+.stat-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+.stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+/* ── Academic Table ─────────────────────────────────────────── */
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  flex: 1;
+  max-width: 360px;
+  transition: border-color var(--transition);
+}
+.search-wrap:focus-within { border-color: var(--accent); }
+.search-wrap i { color: var(--text-muted); flex-shrink: 0; }
+.search-wrap input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  width: 100%;
+}
+.search-wrap input::placeholder { color: var(--text-muted); }
+
+.sort-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.74rem;
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.sort-btn:hover, .sort-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
+
+#academicTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+#academicTable thead {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+#academicTable th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+#academicTable td {
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+#academicTable tbody tr {
+  background: var(--bg-secondary);
+  transition: background var(--transition), transform var(--transition);
+}
+#academicTable tbody tr:last-child td { border-bottom: none; }
+#academicTable tbody tr:hover {
+  background: var(--bg-card-hover);
+}
+#academicTable td:nth-child(1) {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+#academicTable td:nth-child(2) { color: var(--text-primary); font-weight: 500; }
+#academicTable td:nth-child(5) { color: var(--accent); font-weight: 600; }
+
+.badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 99px;
+  font-size: 0.70rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.badge-done   { background: rgba(52,211,153,0.15); color: #34d399; }
+.badge-ongoing{ background: rgba(251,191,36,0.15);  color: #fbbf24; }
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ── Project Cards ──────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-card);
+}
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow), var(--shadow-card);
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(56,189,248,0.30);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.project-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.project-card p {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.project-tags span {
+  font-size: 0.70rem;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.progress-block { display: flex; flex-direction: column; gap: 6px; }
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.progress-pct { color: var(--accent); }
+.progress-bar {
+  height: 5px;
+  background: var(--bg-secondary);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 99px;
+  width: 0;
+  transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.project-links { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Project screenshot thumbnail */
+.project-thumb {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.project-card:hover .project-thumb img { transform: scale(1.04); }
+
+/* ── Gallery ────────────────────────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  background: var(--bg-card);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-caption {
+  font-size: 0.80rem;
+  color: #fff;
+}
+
+/* Match the dark navy background of your portfolio */
+#certifications {
+  background-color: #0d1117;
+  padding: 60px 20px;
+}
+
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #38bdf8; /* cyan/blue like your portfolio */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.cert-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1 1 300px;
+  max-width: 340px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8; /* cyan glow on hover */
+}
+
+.cert-info h3 {
+  color: #ffffff;
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.cert-issuer {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+
+.cert-date {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+
+.cert-id {
+  color: #6e7681;
+  font-size: 0.8rem;
+  margin: 4px 0;
+}
+
+.verify-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+  background-color: #38bdf8;
+  color: #0d1117;
+}
+
+/* ── Contact ────────────────────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-intro {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.contact-detail i { color: var(--accent); flex-shrink: 0; }
+
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form-group label {
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.form-group input,
+.form-group textarea {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color var(--transition);
+  resize: vertical;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--text-muted); }
+
+.form-error {
+  font-size: 0.72rem;
+  color: #f87171;
+  min-height: 1em;
+}
+
+.form-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(52,211,153,0.12);
+  border: 1px solid rgba(52,211,153,0.30);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  color: #34d399;
+  font-size: 0.85rem;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+footer p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ── Modals (CV Viewer + Lightbox) ──────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.80);
+  backdrop-filter: blur(8px);
+  z-index: 600;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease;
+}
+.modal-overlay.active { display: flex !important; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.modal-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: min(90vw, 860px);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+  animation: slideUp 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes slideUp {
+  from { transform: translateY(32px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.modal-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.modal-body {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  min-height: 400px;
+}
+.modal-body iframe {
+  width: 100%;
+  height: 70vh;
+  border: none;
+  display: block;
+}
+
+.pdf-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px;
+  color: var(--text-muted);
+  text-align: center;
+  font-size: 0.88rem;
+}
+
+/* ── Lightbox ───────────────────────────────────────────────── */
+.lightbox-box {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-box img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 80px rgba(0,0,0,0.8);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  z-index: 700;
+}
+.lightbox-close:hover { background: var(--accent); color: #000; }
+
+.lb-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  z-index: 700;
+}
+.lb-nav:hover { background: var(--accent); color: #000; }
+.lb-prev { left: 20px; }
+.lb-next { right: 20px; }
+
+.lb-caption {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  background: rgba(0,0,0,0.5);
+  padding: 8px 20px;
+  border-radius: 99px;
+  pointer-events: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-container { flex-direction: column-reverse; gap: 40px; align-items: center; text-align: center; }
+  .hero-text { max-width: 100%; }
+  .hero-bio { max-width: 100%; }
+  .hero-cta { justify-content: center; }
+  .social-links { justify-content: center; }
+  .hero-image-wrap { width: 220px; height: 220px; }
+  .hero-img { width: 190px; height: 190px; }
+  .scroll-indicator { display: none; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 16px 0;
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform var(--transition), opacity var(--transition);
+    z-index: 399;
+  }
+  .nav-links.open { transform: translateY(0); opacity: 1; }
+  .nav-link { padding: 14px 24px; width: 100%; text-align: center; }
+  .hamburger-btn { display: flex; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .table-controls { flex-direction: column; align-items: stretch; }
+  .search-wrap { max-width: 100%; }
+  .footer-inner { justify-content: center; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 64px 0; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .hero-cta { flex-direction: column; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+
+/**
+ * PORTFOLIO — script.js
+ * Modules: Loader · Lucide icons · Theme · Navbar · Typing animation
+ *          Scroll reveal · Stat counters · Academic table · Progress bars
+ *          Gallery · Lightbox · CV modal · Contact form · Scroll-to-top
+ */
+
+/* ════════════════════════════════════════════════════════════
+   0. INIT & LOADING SCREEN
+   ════════════════════════════════════════════════════════════ */
+window.addEventListener("DOMContentLoaded", () => {
+
+  // ── Lucide icons (safe — won't crash if CDN fails) ──
+  try {
+    try { if (typeof lucide !== "undefined") lucide.createIcons(); } catch(e) {}
+  } catch (e) { console.warn("Lucide icons failed to load:", e); }
+
+  // ── Hide loader & start everything ──
+  // Uses a short timeout (600ms) so it works even offline/file://
+  function bootApp() {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.classList.add("hidden");
+      // Remove from DOM after fade-out transition
+      setTimeout(() => loader.remove(), 600);
+    }
+    startTypingAnimation();
+    initScrollReveal();
+    initStatCounters();
+    initProgressBars();
+  }
+
+  // Attempt to boot after 600 ms regardless of network state
+  setTimeout(bootApp, 600);
+
+  // Run all module initialisers
+  initTheme();
+  initNavbar();
+  initAcademicTable();
+  initGallery();
+  initLightbox();
+  initCVModal();
+  initContactForm();
+  initScrollTop();
+});
+
+
+/* ════════════════════════════════════════════════════════════
+   1. THEME SWITCHER  (persists via localStorage)
+   ════════════════════════════════════════════════════════════ */
+function initTheme() {
+  const html      = document.documentElement;
+  const toggle    = document.getElementById("themeToggle");
+  const iconSun   = document.getElementById("iconSun");
+  const iconMoon  = document.getElementById("iconMoon");
+
+  // Load saved preference or default to dark
+  const saved = localStorage.getItem("portfolio-theme") || "dark";
+  applyTheme(saved);
+
+  toggle.addEventListener("click", () => {
+    const next = html.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(next);
+    localStorage.setItem("portfolio-theme", next);
+  });
+
+  function applyTheme(theme) {
+    html.dataset.theme = theme;
+    if (theme === "dark") {
+      iconSun.style.display  = "";
+      iconMoon.style.display = "none";
+    } else {
+      iconSun.style.display  = "none";
+      iconMoon.style.display = "";
+    }
+    // Re-render icons after display toggle
+    try { if (typeof lucide !== "undefined") lucide.createIcons(); } catch(e) {}
+  }
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   2. NAVBAR — sticky scroll shadow, hamburger, active link
+   ════════════════════════════════════════════════════════════ */
+function initNavbar() {
+  const navbar    = document.getElementById("navbar");
+  const hamburger = document.getElementById("hamburger");
+  const navLinks  = document.getElementById("navLinks");
+  const menuIcon  = document.getElementById("menuIcon");
+  const closeIcon = document.getElementById("closeIcon");
+  const links     = document.querySelectorAll(".nav-link");
+
+  // Sticky shadow
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 24);
+    updateActiveLink();
+  }, { passive: true });
+
+  // Hamburger toggle
+  hamburger.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    menuIcon.style.display  = open ? "none" : "";
+    closeIcon.style.display = open ? "" : "none";
+    try { if (typeof lucide !== "undefined") lucide.createIcons(); } catch(e) {}
+  });
+
+  // Close menu on link click
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuIcon.style.display  = "";
+      closeIcon.style.display = "none";
+      try { if (typeof lucide !== "undefined") lucide.createIcons(); } catch(e) {}
+    });
+  });
+
+  // Active section highlighting
+  function updateActiveLink() {
+    const sections = document.querySelectorAll("section[id]");
+    let current = "";
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    links.forEach(l => {
+      l.classList.toggle("active", l.getAttribute("href") === `#${current}`);
+    });
+  }
+  updateActiveLink();
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   3. TYPING ANIMATION
+   ════════════════════════════════════════════════════════════ */
+function startTypingAnimation() {
+  const el    = document.getElementById("typedText");
+  if (!el) return;
+
+  const names = ["Muhammad Sohaib"];
+  let   nameIdx  = 0;
+  let   charIdx  = 0;
+  let   deleting = false;
+  const SPEED_TYPE = 80;
+  const SPEED_DEL  = 45;
+  const PAUSE_END  = 1800;
+  const PAUSE_START= 350;
+
+  function tick() {
+    const current = names[nameIdx];
+
+    if (!deleting) {
+      // Type forward
+      el.textContent = current.slice(0, charIdx + 1);
+      charIdx++;
+      if (charIdx === current.length) {
+        // Pause then start deleting (unless it's the last "Alex Morgan" — keep it)
+        if (nameIdx === names.length - 1) return; // stop after final name
+        deleting = true;
+        setTimeout(tick, PAUSE_END);
+        return;
+      }
+    } else {
+      // Delete backward
+      el.textContent = current.slice(0, charIdx - 1);
+      charIdx--;
+      if (charIdx === 0) {
+        deleting = false;
+        nameIdx  = (nameIdx + 1) % names.length;
+        setTimeout(tick, PAUSE_START);
+        return;
+      }
+    }
+
+    setTimeout(tick, deleting ? SPEED_DEL : SPEED_TYPE);
+  }
+
+  tick();
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   4. SCROLL REVEAL
+   ════════════════════════════════════════════════════════════ */
+function initScrollReveal() {
+  const items = document.querySelectorAll(".reveal");
+  if (!items.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        // Stagger cards inside a grid
+        const delay = entry.target.dataset.index
+          ? parseInt(entry.target.dataset.index) * 80
+          : 0;
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  items.forEach(item => observer.observe(item));
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   5. STAT COUNTERS
+   ════════════════════════════════════════════════════════════ */
+function initStatCounters() {
+  const counters = document.querySelectorAll(".stat-number[data-target]");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el     = entry.target;
+      const target = parseInt(el.dataset.target);
+      const duration = 1200;
+      const start    = performance.now();
+
+      function step(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased    = 1 - Math.pow(1 - progress, 3); // ease-out-cubic
+        el.textContent = Math.round(eased * target);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(c => observer.observe(c));
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   6. PROGRESS BARS
+   ════════════════════════════════════════════════════════════ */
+function initProgressBars() {
+  const bars = document.querySelectorAll(".progress-fill[data-width]");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const bar = entry.target;
+      // Delay slightly so user notices animation
+      setTimeout(() => {
+        bar.style.width = bar.dataset.width + "%";
+      }, 300);
+      observer.unobserve(bar);
+    });
+  }, { threshold: 0.3 });
+
+  bars.forEach(b => observer.observe(b));
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   7. ACADEMIC TABLE — data, search, sort
+   ════════════════════════════════════════════════════════════ */
+const ACADEMIC_DATA = [
+  { degree: "BS Computer Science",      institute: "University of Engineering and Technology Peshawar, Abbottabad Campus", year: 2025, grade: "3.77 GPA", status: "ongoing"  },
+  { degree: "Intermediate (Computer Science)",  institute: "Government Postgraduate College Haripur ",          year: 2024, grade: "74%",   status: "done"    },
+  { degree: "Matriculation (Science)",  institute: "Government High School No 3 Haripur", year: 2022, grade: "81.18%",   status: "done"    },
+  { degree: "Diploma in Information Technology",      institute: "Government College of Management Sciences Haripur",              year: 2024, grade: "Distinction", status: "done" },
+
+];
+
+let sortState = { key: "year", dir: "desc" };
+let searchTerm = "";
+
+function initAcademicTable() {
+  renderTable();
+
+  // Search
+  const searchInput = document.getElementById("tableSearch");
+  searchInput.addEventListener("input", () => {
+    searchTerm = searchInput.value.toLowerCase();
+    renderTable();
+  });
+
+  // Sort buttons
+  document.querySelectorAll(".sort-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.sort;
+      if (sortState.key === key) {
+        sortState.dir = sortState.dir === "asc" ? "desc" : "asc";
+      } else {
+        sortState.key = key;
+        sortState.dir = "asc";
+      }
+      document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderTable();
+    });
+  });
+}
+
+function renderTable() {
+  const tbody     = document.getElementById("academicBody");
+  const noResults = document.getElementById("noResults");
+
+  // Filter
+  let data = ACADEMIC_DATA.filter(row => {
+    const haystack = [row.degree, row.institute, row.year, row.grade, row.status]
+      .join(" ").toLowerCase();
+    return haystack.includes(searchTerm);
+  });
+
+  // Sort
+  data.sort((a, b) => {
+    let av = a[sortState.key], bv = b[sortState.key];
+    if (typeof av === "string") av = av.toLowerCase();
+    if (typeof bv === "string") bv = bv.toLowerCase();
+    if (av < bv) return sortState.dir === "asc" ? -1 : 1;
+    if (av > bv) return sortState.dir === "asc" ?  1 : -1;
+    return 0;
+  });
+
+  if (data.length === 0) {
+    tbody.innerHTML = "";
+    noResults.style.display = "block";
+    return;
+  }
+  noResults.style.display = "none";
+
+  tbody.innerHTML = data.map((row, i) => `
+    <tr>
+      <td>${String(i + 1).padStart(2, "0")}</td>
+      <td>${escapeHtml(row.degree)}</td>
+      <td>${escapeHtml(row.institute)}</td>
+      <td>${row.year}</td>
+      <td>${escapeHtml(row.grade)}</td>
+      <td>
+        <span class="badge ${row.status === "done" ? "badge-done" : "badge-ongoing"}">
+          ${row.status === "done" ? "Completed" : "In Progress"}
+        </span>
+      </td>
+    </tr>
+  `).join("");
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+/* ════════════════════════════════════════════════════════════
+   8. GALLERY  — dynamic items + lightbox trigger
+   ════════════════════════════════════════════════════════════ */
+const GALLERY_ITEMS = [
+  {
+    src:     "assets/academic-tracker.jpg",
+    caption: "Academic Tracker — Dashboard",
+    alt:     "Academic Tracker dashboard"
+  },
+  {
+    src:     "assets/unidev-showcase.jpg",
+    caption: "UniDev Showcase — Home Page",
+    alt:     "UniDev Showcase home page"
+  },
+];
+
+function initGallery() {
+  const grid = document.getElementById("galleryGrid");
+  if (!grid) return;
+
+  grid.innerHTML = GALLERY_ITEMS.map((item, i) => `
+    <div class="gallery-item reveal" data-index="${i}" data-gallery-idx="${i}">
+      <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+      <div class="gallery-overlay">
+        <span class="gallery-caption">${item.caption}</span>
+      </div>
+    </div>
+  `).join("");
+
+  // Animate cards when they appear on screen
+const certCards = document.querySelectorAll('.cert-card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200);
+    }
+  });
+}, { threshold: 0.1 });
+
+certCards.forEach(card => {
+  observer.observe(card);
+});
+
+
+  // Attach click for lightbox
+  grid.querySelectorAll(".gallery-item").forEach(el => {
+    el.addEventListener("click", () => {
+      openLightbox(parseInt(el.dataset.galleryIdx));
+    });
+  });
+
+  // Trigger reveal observer on newly added elements
+  initScrollReveal();
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   9. LIGHTBOX
+   ════════════════════════════════════════════════════════════ */
+let lbIndex = 0;
+
+function initLightbox() {
+  const overlay  = document.getElementById("lightbox");
+  const img      = document.getElementById("lightboxImg");
+  const caption  = document.getElementById("lightboxCaption");
+  const btnClose = document.getElementById("lightboxClose");
+  const btnPrev  = document.getElementById("lightboxPrev");
+  const btnNext  = document.getElementById("lightboxNext");
+
+  btnClose.addEventListener("click", closeLightbox);
+  overlay.addEventListener("click", e => { if (e.target === overlay) closeLightbox(); });
+
+  btnPrev.addEventListener("click", () => {
+    lbIndex = (lbIndex - 1 + GALLERY_ITEMS.length) % GALLERY_ITEMS.length;
+    showLbImage();
+  });
+  btnNext.addEventListener("click", () => {
+    lbIndex = (lbIndex + 1) % GALLERY_ITEMS.length;
+    showLbImage();
+  });
+
+  // Keyboard navigation
+  document.addEventListener("keydown", e => {
+    if (overlay.style.display === "none" || !overlay.classList.contains("active")) return;
+    if (e.key === "ArrowLeft")  btnPrev.click();
+    if (e.key === "ArrowRight") btnNext.click();
+    if (e.key === "Escape")     closeLightbox();
+  });
+
+  function showLbImage() {
+    const item = GALLERY_ITEMS[lbIndex];
+    img.src         = item.src;
+    img.alt         = item.alt;
+    caption.textContent = `${item.caption}  (${lbIndex + 1} / ${GALLERY_ITEMS.length})`;
+  }
+
+  // Expose open function
+  window._showLbImage = showLbImage;
+}
+
+function openLightbox(idx) {
+  lbIndex = idx;
+  const overlay = document.getElementById("lightbox");
+  overlay.style.display = "flex";
+  overlay.classList.add("active");
+  if (window._showLbImage) window._showLbImage();
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById("lightbox");
+  overlay.style.display = "none";
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   10. CV MODAL
+   ════════════════════════════════════════════════════════════ */
+function initCVModal() {
+  const modal    = document.getElementById("cvModal");
+  const openBtn  = document.getElementById("cvViewerBtn");
+  const closeBtn = document.getElementById("cvModalClose");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeBtn.addEventListener("click", closeCVModal);
+  modal.addEventListener("click", e => { if (e.target === modal) closeCVModal(); });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && modal.classList.contains("active")) closeCVModal();
+  });
+}
+
+function closeCVModal() {
+  const modal = document.getElementById("cvModal");
+  modal.style.display = "none";
+  modal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   11. CONTACT FORM VALIDATION
+   ════════════════════════════════════════════════════════════ */
+function initContactForm() {
+  const form    = document.getElementById("contactForm");
+  if (!form) return;
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    if (validateForm()) simulateSubmit();
+  });
+
+  // Live validation on blur
+  const fname   = document.getElementById("fname");
+  const femail  = document.getElementById("femail");
+  const fmessage= document.getElementById("fmessage");
+
+  fname.addEventListener("blur",    () => validateName());
+  femail.addEventListener("blur",   () => validateEmail());
+  fmessage.addEventListener("blur", () => validateMessage());
+}
+
+function validateName() {
+  const val = document.getElementById("fname").value.trim();
+  const err = document.getElementById("nameError");
+  if (val.length < 2) {
+    err.textContent = "Please enter your full name (min 2 characters).";
+    return false;
+  }
+  err.textContent = "";
+  return true;
+}
+
+function validateEmail() {
+  const val = document.getElementById("femail").value.trim();
+  const err = document.getElementById("emailError");
+  const re  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!re.test(val)) {
+    err.textContent = "Please enter a valid email address.";
+    return false;
+  }
+  err.textContent = "";
+  return true;
+}
+
+function validateMessage() {
+  const val = document.getElementById("fmessage").value.trim();
+  const err = document.getElementById("msgError");
+  if (val.length < 10) {
+    err.textContent = "Message must be at least 10 characters.";
+    return false;
+  }
+  err.textContent = "";
+  return true;
+}
+
+function validateForm() {
+  const n = validateName();
+  const e = validateEmail();
+  const m = validateMessage();
+  return n && e && m;
+}
+
+function simulateSubmit() {
+  const btn     = document.querySelector("#contactForm button[type='submit']");
+  const success = document.getElementById("formSuccess");
+  const form    = document.getElementById("contactForm");
+
+  // Show loading state
+  btn.disabled        = true;
+  btn.innerHTML       = '<span class="loader-ring" style="width:18px;height:18px;border-width:2px;display:inline-block;vertical-align:middle;margin-right:8px;"></span> Sending…';
+
+  // Simulate network delay
+  setTimeout(() => {
+    form.reset();
+    btn.disabled  = false;
+    btn.innerHTML = '<i data-lucide="send"></i> Send Message';
+    success.style.display = "flex";
+    try { if (typeof lucide !== "undefined") lucide.createIcons(); } catch(e) {}
+
+    // Hide success after 5 s
+    setTimeout(() => { success.style.display = "none"; }, 5000);
+  }, 1800);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   12. SCROLL-TO-TOP BUTTON
+   ════════════════════════════════════════════════════════════ */
+function initScrollTop() {
+  const btn = document.getElementById("scrollTop");
+  if (!btn) return;
+
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("visible", window.scrollY > 400);
+  }, { passive: true });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
